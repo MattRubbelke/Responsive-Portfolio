@@ -11,7 +11,6 @@ h1 {
 }
 
 .navbar {
-    overflow: hidden;
     background-color: #ffffff;
     display: inline-block;
     margin: 0;
@@ -29,6 +28,7 @@ ul {
     display: inline-flex;
     float: right;
     margin-bottom: 0;
+    padding-right: 30px;
 }
 
 li {
@@ -54,10 +54,8 @@ li a.active{
     background-color: #ffffff;
     border: 2px solid #dddddd;
     padding: 5px 16px;
-    margin: 0 auto;
-    margin-top: 32px;
-    margin-bottom: 100px;
-    max-width: 960px;
+    margin: 32px auto 100px;
+    max-width: 930px;
 }
 
 .contitle {
@@ -119,6 +117,12 @@ be a gap between the footer and the content*/
     text-align: center;
 }
 
+#mattport{
+    float:left;
+    width:150px; 
+    margin:0 20px 0 0px;
+}
+
 /*In an attempt to match the below photo layout to the 
 example one, I used grids - as display: inline-block 
 was aligning row 2 and 3 together, likely due to the 
@@ -166,4 +170,98 @@ textarea{
     margin: 12px 0px 0px 0px;
 }
 
-@meia 
+@media screen and (max-width:980px){
+
+    .container{
+        width: 700px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .navwidth {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .container{
+        float: left;
+        margin: 30px auto 100px 20px;
+        width: 80%;
+    }
+  
+    #mattport{
+      width: 50%;
+
+  }
+  
+  .navbar{
+      width: 100%;
+  }
+
+  .navwidth{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width:640px) {
+    body{
+        font-size: 20px;
+    }
+
+    .navbar {
+        position: static;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navwidth{
+        width:100%;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    ul{
+        text-align: center;
+        justify-content: space-evenly;
+        display: flex;
+        float: none;
+    }
+
+    #myname{ 
+        width: 100%;
+        text-align: center;
+        }
+    
+    #mattport {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+
+    p{
+        clear: both;
+    }
+
+    .portimages{
+        margin: 20px auto 0px;
+    }
+    .rugby {
+        width:100%;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    .row{
+        display: block;
+        align-items: center;
+    }
+}
